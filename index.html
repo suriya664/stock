@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>PixelStock | Premium Stock Photography Agency</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicons -->
+    <link href="img/favicon.png" rel="icon">
+    <link href="img/favicon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+    <!-- Vendor CSS File -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="vendor/slick/slick.css" rel="stylesheet">
+    <link href="vendor/slick/slick-theme.css" rel="stylesheet">
+    <link href="vendor/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Main Stylesheet File -->
+    <link href="css/hover-style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Section Start -->
+    <div class="menu"> <span></span> </div>
+    <nav id="nav">
+        <ul class="main">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="home2.html">Home 2</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Gallery</a></li>
+            <li><a href="booking.html">Pricing</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="javascript:void(0)" id="theme-toggle">Theme: <span id="theme-text">Light</span></a></li>
+            <li><a href="javascript:void(0)" id="rtl-toggle">RTL: <span id="rtl-text">Off</span></a></li>
+        </ul>
+    </nav>
+    <div class="overlay"></div>
+
+    <div class="header">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1><a class="brand" href="index.html">PixelStock</a></h1>
+                    <!-- <a class="brand" href="index.html"><img alt="Logo" src="img/logo.jpg"></a> -->
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <h1>Premium Stock Photography for Every Project</h1>
+
+                <p class="tagline">
+                    Discover millions of high-quality, royalty-free images for your creative needs.
+                </p>
+                <a class="btn" data-toggle="popover" data-container="body" data-placement="top" data-html="true"
+                    id="download"><i class="fa fa-search"></i>Browse Collection</a>
+                <div id="popover-content-download">
+                    <form>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="radio">
+                                    <label><input type="radio" name="reg"> 640×426 | JPG | 40KB</label>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="radio">
+                                    <label><input type="radio" name="reg"> 1280×853 | JPG | 132KB</label>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="radio">
+                                    <label><input type="radio" name="reg"> 1920×1280 | JPG | 279KB</label>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="radio">
+                                    <label><input type="radio" name="reg"> 5184×3456 | JPG | 1.4MB</label>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <button type="submit"><i class="fa fa-download"></i>Download</button>
+                                <button type="submit"><i class="fa fa-eye"></i>Preview</button>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header Section End -->
+
+    <!-- About Section Start -->
+    <div id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Our Agency</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6 img-cols">
+                    <div class="img-col">
+                        <div class="img">
+                            <div class="box7">
+                                <img src="img/about.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 content-cols">
+                    <div class="content-col content-col-1">
+                        <h3>Your Trusted Stock Photography Partner</h3>
+                        <p>
+                            PixelStock is a leading stock photography agency providing high-quality, royalty-free images
+                            to creative professionals, businesses, and content creators worldwide. Our curated
+                            collection features millions of stunning photographs across every category imaginable.
+                        </p>
+                        <p>
+                            From breathtaking landscapes to professional business imagery, our extensive library is
+                            constantly updated with fresh content from talented photographers around the globe. Simple
+                            licensing, instant downloads, and competitive pricing make us the go-to choice for your
+                            visual content needs.
+                        </p>
+                        <a href="about.html">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About Section End -->
+
+    <!-- Portfolio Section Start -->
+    <div id="portfolio">
+        <div class="container-fluid gal-container">
+            <div class="section-header">
+                <h2>Featured Stock Photos</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 co-xs-12 port-item">
+                    <div class="box7">
+                        <img src="img/portfolio/portfolio-1.jpg">
+                        <div class="box-content">
+                            <h3 class="title">Lorem ipsum</h3>
+                            <span class="post">Lorem ipsum dolor sit amet consectetur adipiscing elit.</span>
+                            <ul class="icon">
+                                <li><a href="#" class="fa fa-search" data-toggle="modal" data-target="#modal-id"></a>
+                                </li>
+                                <li><a href="#" class="fa fa-link" data-toggle="modal" data-target="#modal-id"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 co-xs-12 port-item">
+                    <div class="box7">
+                        <img src="img/portfolio/portfolio-2.jpg">
+                        <div class="box-content">
+                            <h3 class="title">Phasellus luctus</h3>
+                            <span class="post">Phasellus luctus ultrices pellentesque massa eu turpis.</span>
+                            <ul class="icon">
+                                <li><a href="#" class="fa fa-search" data-toggle="modal" data-target="#modal-id"></a>
+                                </li>
+                                <li><a href="#" class="fa fa-link" data-toggle="modal" data-target="#modal-id"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 co-xs-12 port-item">
+                    <div class="box7">
+                        <img src="img/portfolio/portfolio-3.jpg">
+                        <div class="box-content">
+                            <h3 class="title">Fusce felis varius</h3>
+                            <span class="post">Fusce varius libero fermentum facilisi. Morbi ut tincidunt metus.</span>
+                            <ul class="icon">
+                                <li><a href="#" class="fa fa-search" data-toggle="modal" data-target="#modal-id"></a>
+                                </li>
+                                <li><a href="#" class="fa fa-link" data-toggle="modal" data-target="#modal-id"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 co-xs-12 port-item">
+                    <div class="box7">
+                        <img src="img/portfolio/portfolio-4.jpg">
+                        <div class="box-content">
+                            <h3 class="title">Praesent ultricies</h3>
+                            <span class="post">Etiam purus magna efficitur non mattis molestie nisi.</span>
+                            <ul class="icon">
+                                <li><a href="#" class="fa fa-search" data-toggle="modal" data-target="#modal-id"></a>
+                                </li>
+                                <li><a href="#" class="fa fa-link" data-toggle="modal" data-target="#modal-id"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 co-xs-12 port-item">
+                    <div class="box7">
+                        <img src="img/portfolio/portfolio-5.jpg">
+                        <div class="box-content">
+                            <h3 class="title">Cras vestibulum dui</h3>
+                            <span class="post"> Cras vestibulum consequat molestie vitae non dignissim eros.</span>
+                            <ul class="icon">
+                                <li><a href="#" class="fa fa-search" data-toggle="modal" data-target="#modal-id"></a>
+                                </li>
+                                <li><a href="#" class="fa fa-link" data-toggle="modal" data-target="#modal-id"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 co-xs-12 port-item">
+                    <div class="box7">
+                        <img src="img/portfolio/portfolio-6.jpg">
+                        <div class="box-content">
+                            <h3 class="title">Molestie vitae</h3>
+                            <span class="post">Etiam purus magna efficitur non mattis molestie nisi.</span>
+                            <ul class="icon">
+                                <li><a href="#" class="fa fa-search" data-toggle="modal" data-target="#modal-id"></a>
+                                </li>
+                                <li><a href="#" class="fa fa-link" data-toggle="modal" data-target="#modal-id"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 co-xs-12 port-item">
+                    <div class="box7">
+                        <img src="img/portfolio/portfolio-7.jpg">
+                        <div class="box-content">
+                            <h3 class="title">Nunc in pellentesque</h3>
+                            <span class="post">Nunc in pellentesque tortor, vulputate vestibulum pretium. </span>
+                            <ul class="icon">
+                                <li><a href="#" class="fa fa-search" data-toggle="modal" data-target="#modal-id"></a>
+                                </li>
+                                <li><a href="#" class="fa fa-link" data-toggle="modal" data-target="#modal-id"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 co-xs-12 port-item">
+                    <div class="box7">
+                        <img src="img/portfolio/portfolio-8.jpg">
+                        <div class="box-content">
+                            <h3 class="title">Cras vitae placerat</h3>
+                            <span class="post">Cras vitae placerat nisi. Suspendisse quis velit nibh.</span>
+                            <ul class="icon">
+                                <li><a href="#" class="fa fa-search" data-toggle="modal" data-target="#modal-id"></a>
+                                </li>
+                                <li><a href="#" class="fa fa-link" data-toggle="modal" data-target="#modal-id"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 co-xs-12 port-item">
+                    <div class="box7">
+                        <img src="img/portfolio/portfolio-9.jpg">
+                        <div class="box-content">
+                            <h3 class="title">Maecenas suscipit vestibulum</h3>
+                            <span class="post">Maecenas suscipit vestibulum varius dolor finibus.</span>
+                            <ul class="icon">
+                                <li><a href="#" class="fa fa-search" data-toggle="modal" data-target="#modal-id"></a>
+                                </li>
+                                <li><a href="#" class="fa fa-link" data-toggle="modal" data-target="#modal-id"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-id" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="port-slider">
+                                <div><img src="img/portfolio/portfolio-2.jpg"></div>
+                                <div><img src="img/portfolio/portfolio-4.jpg"></div>
+                                <div><img src="img/portfolio/portfolio-6.jpg"></div>
+                                <div><img src="img/portfolio/portfolio-8.jpg"></div>
+                            </div>
+                            <div class="port-slider-nav">
+                                <div><img src="img/portfolio/portfolio-2.jpg"></div>
+                                <div><img src="img/portfolio/portfolio-4.jpg"></div>
+                                <div><img src="img/portfolio/portfolio-6.jpg"></div>
+                                <div><img src="img/portfolio/portfolio-8.jpg"></div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <h2>Lorem ipsum dolor</h2>
+                            <p>
+                                Lorem ipsum dolor viverra purus imperdiet rhoncus imperdiet. Suspendisse vulputate
+                                condimentum ligula sollicitudin hendrerit. Phasellus luctus, elit et ultrices interdum,
+                                neque mi pellentesque massorci. Nam in cursus ex, nec mattis lectus. Curabitur quis
+                                elementum nunc. Mauris iaculis, justo eu aliquam sagittis, arcu eros cursus libero, sit
+                                amet eleifend dolor odio at lacus.
+                            </p>
+                            <h2>Free Download</h2>
+                            <div class="download-content">
+                                <form>
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" name="reg" class="custom-control-input"
+                                                    id="low-reg">
+                                                <label class="custom-control-label" for="low-reg">640×426 | JPG |
+                                                    40KB</label>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" name="reg" class="custom-control-input"
+                                                    id="medium-reg">
+                                                <label class="custom-control-label" for="medium-reg">1280×853 | JPG |
+                                                    132KB</label>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" name="reg" class="custom-control-input"
+                                                    id="high-reg">
+                                                <label class="custom-control-label" for="high-reg">1920×1280 | JPG |
+                                                    279KB</label>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" name="reg" class="custom-control-input"
+                                                    id="very-high-reg">
+                                                <label class="custom-control-label" for="very-high-reg">5184×3456 | JPG
+                                                    | 1.4MB</label>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <button type="submit"><i class="fa fa-download"></i>Download</button>
+                                            <button type="submit"><i class="fa fa-eye"></i>Preview</button>
+                                        </li>
+                                    </ul>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Section End -->
+
+    <!-- Subscribe Section Start -->
+    <div id="subscribe">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get Free Stock Photos & Updates</h2>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="subscribe-form">
+                        <form>
+                            <input type="email" required="required" placeholder="Enter your email here" />
+                            <button>submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Subscribe Section End -->
+
+    <!-- Booking Section Start -->
+    <div id="booking">
+        <div class="container">
+            <div class="section-header">
+                <h2>License & Purchase</h2>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="booking-form">
+                        <div id="success"></div>
+                        <form name="sentMessage" id="bookingForm" novalidate="novalidate">
+                            <div class="form-row">
+                                <div class="control-group col-md-6">
+                                    <label>First Name</label>
+                                    <input type="text" class="form-control" id="fname" placeholder="E.g. John"
+                                        required="required"
+                                        data-validation-required-message="Please enter first name" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group col-md-6">
+                                    <label>Last Name</label>
+                                    <input type="text" class="form-control" id="lname" placeholder="E.g. Sina"
+                                        required="required" data-validation-required-message="Please enter last name" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="control-group col-md-6">
+                                    <label>Mobile</label>
+                                    <input type="text" class="form-control" id="mobile" placeholder="E.g. 1-887-877-54"
+                                        required="required"
+                                        data-validation-required-message="Please enter your mobile number" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group col-md-6">
+                                    <label>Email</label>
+                                    <input type="email" class="form-control" id="email"
+                                        placeholder="E.g. email@example.com" required="required"
+                                        data-validation-required-message="Please enter your email" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="control-group col-md-6">
+                                    <div class="form-row">
+                                        <div class="control-group col-6">
+                                            <label>Booking From (Date)</label>
+                                            <input type="text" class="form-control datetimepicker-input" id="date-1"
+                                                data-toggle="datetimepicker" data-target="#date-1"
+                                                placeholder="E.g. MM/DD/YYYY" required="required"
+                                                data-validation-required-message="Please enter date" />
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                        <div class="control-group col-6">
+                                            <label>Time</label>
+                                            <input type="text" class="form-control datetimepicker-input" id="time-1"
+                                                data-toggle="datetimepicker" data-target="#time-1"
+                                                placeholder="E.g. 5:00 PM" required="required"
+                                                data-validation-required-message="Please enter time" />
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="control-group col-md-6">
+                                    <div class="form-row">
+                                        <div class="control-group col-6">
+                                            <label>Booking To (Date)</label>
+                                            <input type="text" class="form-control datetimepicker-input" id="date-2"
+                                                data-toggle="datetimepicker" data-target="#date-2"
+                                                placeholder="E.g. MM/DD/YYYY" required="required"
+                                                data-validation-required-message="Please enter date" />
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                        <div class="control-group col-6">
+                                            <label>Time</label>
+                                            <input type="text" class="form-control datetimepicker-input" id="time-2"
+                                                data-toggle="datetimepicker" data-target="#time-2"
+                                                placeholder="E.g. 9:00 PM" required="required"
+                                                data-validation-required-message="Please enter time" />
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label>Special Request</label>
+                                <input type="text" class="form-control" id="comment"
+                                    placeholder="E.g. Any special request" required="required"
+                                    data-validation-required-message="Please enter your any special request" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="button"><button type="submit" id="bookingButton">Book My Schedule</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Booking Section End -->
+
+    <!-- Call Section Start -->
+    <div id="call-us">
+        <div class="container">
+            <div class="section-header">
+                <h2>Need Help? Contact Our Sales Team</h2>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>
+                        Monday-Friday: 7am to 12am<br>
+                        Saturday: 5pm to 12am<br>
+                        Sunday: 9am to 12am
+                    </p>
+                    <a href="tel:+123456789">+123456789</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Call Section End -->
+
+    <!-- Blog Section Start -->
+    <div id="blog">
+        <div class="container">
+            <div class="section-header">
+                <h2>Photography Tips & Industry News</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 single-blog">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="blog-img">
+                                <div class="box7">
+                                    <img src="img/blog-1.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="blog-des">
+                                <h4>10 Tips for Stunning Landscape Photography</h4>
+                                <span><i class="fa fa-eye"></i>120 Views<i class="fa fa-comment-o"></i>15
+                                    Comments</span>
+                                <p>
+                                    Capturing the beauty of the natural world requires patience and technique. Learn how
+                                    to use lighting, filters, and composition to take your landscape shots to the next
+                                    level.
+                                </p>
+                                <a class="btn" href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 single-blog">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="blog-img">
+                                <div class="box7">
+                                    <img src="img/blog-2.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="blog-des">
+                                <h4>Mastering Composition: The Rule of Thirds</h4>
+                                <span><i class="fa fa-eye"></i>85 Views<i class="fa fa-comment-o"></i>20 Comments</span>
+                                <p>
+                                    Composition is king in photography. profound impact on how viewers perceive your
+                                    images. Discover how to apply the rule of thirds to create balanced and engaging
+                                    photos.
+                                </p>
+                                <a class="btn" href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 single-blog">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="blog-img">
+                                <div class="box7">
+                                    <img src="img/blog-3.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="blog-des">
+                                <h4>The Ultimate Guide to Stock Licensing</h4>
+                                <span><i class="fa fa-eye"></i>200 Views<i class="fa fa-comment-o"></i>45
+                                    Comments</span>
+                                <p>
+                                    Confused about Royalty-Free vs. Rights-Managed? Our comprehensive guide breaks down
+                                    everything you need to know about licensing images for your projects securely.
+                                </p>
+                                <a class="btn" href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 single-blog">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="blog-img">
+                                <div class="box7">
+                                    <img src="img/blog-4.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="blog-des">
+                                <h4>How to Monetize Your Photography</h4>
+                                <span><i class="fa fa-eye"></i>150 Views<i class="fa fa-comment-o"></i>30
+                                    Comments</span>
+                                <p>
+                                    Turn your passion into profit. We interview successful stock photographers who share
+                                    their secrets on building a profitable portfolio and finding your niche in the
+                                    market.
+                                </p>
+                                <a class="btn" href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Blog Section End -->
+
+    <!-- Footer Section Start -->
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="social">
+                        <a href="">
+                            <li class="fa fa-instagram"></li>
+                        </a>
+                        <a href="">
+                            <li class="fa fa-twitter"></li>
+                        </a>
+                        <a href="">
+                            <li class="fa fa-facebook-f"></li>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <p>Copyright &#169; <a href="#">PixelStock Agency</a> All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Section End -->
+
+    <!-- Vendor JavaScript File -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/jquery/jquery-migrate.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/wow/wow.min.js"></script>
+    <script src="vendor/slick/slick.min.js"></script>
+    <script src="vendor/tempusdominus/js/moment.min.js"></script>
+    <script src="vendor/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="vendor/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Main Javascript File -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
