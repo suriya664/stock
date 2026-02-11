@@ -41,8 +41,8 @@
             <li><a href="login.html">Login</a></li>
             <li><a href="dashboard.html">Dashboard</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="javascript:void(0)" id="theme-toggle">Theme: <span id="theme-text">Light</span></a></li>
-            <li><a href="javascript:void(0)" id="rtl-toggle">RTL: <span id="rtl-text">Off</span></a></li>
+            <li><a href="javascript:void(0)" class="theme-toggle">Theme: <span class="theme-text">Light</span></a></li>
+            <li><a href="javascript:void(0)" class="rtl-toggle">RTL: <span class="rtl-text">Off</span></a></li>
         </ul>
     </nav>
     <div class="overlay"></div>
@@ -64,7 +64,7 @@
     <!-- Header Section End -->
 
     <!-- Pricing Section Start -->
-    <div id="pricing-plans" style="padding: 60px 0; background: #f8f9fa;">
+    <div id="pricing-plans" style="padding: 60px 0; background: var(--section-bg);">
         <div class="container">
             <div class="section-header">
                 <h2>Our Pricing Plans</h2>
@@ -76,11 +76,12 @@
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <div class="pricing-card text-center"
-                        style="padding: 40px; background: #fff; border: 2px solid #e0e0e0; border-radius: 10px;">
+                        style="padding: 40px; background: var(--bg-color); border: 2px solid var(--border-color); border-radius: 10px;">
                         <h3>Starter</h3>
-                        <div class="price" style="font-size: 48px; font-weight: bold; color: #0056b3; margin: 20px 0;">
+                        <div class="price"
+                            style="font-size: 48px; font-weight: bold; color: var(--primary-color); margin: 20px 0;">
                             $29</div>
-                        <p style="color: #666; margin-bottom: 30px;">per month</p>
+                        <p style="color: var(--text-color); margin-bottom: 30px;">per month</p>
                         <ul style="list-style: none; padding: 0; margin-bottom: 30px;">
                             <li style="padding: 10px 0;"><i class="fa fa-check" style="color: #0056b3;"></i> 10
                                 downloads/month</li>
@@ -108,11 +109,12 @@
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="pricing-card text-center"
-                        style="padding: 40px; background: #fff; border: 2px solid #e0e0e0; border-radius: 10px;">
+                        style="padding: 40px; background: var(--bg-color); border: 2px solid var(--border-color); border-radius: 10px;">
                         <h3>Enterprise</h3>
-                        <div class="price" style="font-size: 48px; font-weight: bold; color: #0056b3; margin: 20px 0;">
+                        <div class="price"
+                            style="font-size: 48px; font-weight: bold; color: var(--primary-color); margin: 20px 0;">
                             $199</div>
-                        <p style="color: #666; margin-bottom: 30px;">per month</p>
+                        <p style="color: var(--text-color); margin-bottom: 30px;">per month</p>
                         <ul style="list-style: none; padding: 0; margin-bottom: 30px;">
                             <li style="padding: 10px 0;"><i class="fa fa-check" style="color: #0056b3;"></i> Unlimited
                                 downloads</li>
@@ -224,7 +226,8 @@
                                     data-validation-required-message="Please enter your any special request" />
                                 <p class="help-block text-danger"></p>
                             </div>
-                            <div class="button"><button type="submit" id="bookingButton">Request Quote</button></div>
+                            <div class="button text-center"><button type="submit" id="bookingButton">Request
+                                    Quote</button></div>
                         </form>
                     </div>
                 </div>
@@ -257,22 +260,48 @@
     <div id="footer">
         <div class="container">
             <div class="row">
-                <div class="col-12">
+                <div class="col-md-3 footer-col">
+                    <h3>About Agency</h3>
+                    <p>
+                        PixelStock is a leading stock photography agency providing high-quality, royalty-free images to
+                        creative professionals worldwide. Our curated collection features millions of stunning
+                        photographs.
+                    </p>
                     <div class="social">
-                        <a href="">
-                            <li class="fa fa-instagram"></li>
-                        </a>
-                        <a href="">
-                            <li class="fa fa-twitter"></li>
-                        </a>
-                        <a href="">
-                            <li class="fa fa-facebook-f"></li>
-                        </a>
+                        <a href=""><i class="fa fa-instagram"></i></a>
+                        <a href=""><i class="fa fa-twitter"></i></a>
+                        <a href=""><i class="fa fa-facebook-f"></i></a>
                     </div>
                 </div>
-                <div class="col-12">
-                    <p>Copyright &#169; <a href="#">PixelStock Agency</a> All Rights Reserved.</p>
+                <div class="col-md-3 footer-col">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><i class="fa fa-angle-right"></i><a href="index.html">Home</a></li>
+                        <li><i class="fa fa-angle-right"></i><a href="portfolio.html">Gallery</a></li>
+                        <li><i class="fa fa-angle-right"></i><a href="booking.html">Pricing</a></li>
+                        <li><i class="fa fa-angle-right"></i><a href="blog.html">Blog</a></li>
+                        <li><i class="fa fa-angle-right"></i><a href="contact.html">Contact</a></li>
+                    </ul>
                 </div>
+                <div class="col-md-3 footer-col">
+                    <h3>Template Features</h3>
+                    <ul>
+                        <li><i class="fa fa-check"></i>Responsive</li>
+                        <li><i class="fa fa-check"></i>Bootstrap 4</li>
+                        <li><i class="fa fa-check"></i>Pure HTML & CSS</li>
+                        <li><i class="fa fa-check"></i>Cross Browser Compatibility</li>
+                        <li><i class="fa fa-check"></i>Ready to Use</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-col footer-contact">
+                    <h3>Contact Info</h3>
+                    <p><i class="fa fa-map-marker"></i>2275 Wolf Pen Road, San Francisco, California</p>
+                    <p><i class="fa fa-phone"></i>+650-376-5625</p>
+                    <p><i class="fa fa-envelope"></i>support@pixelstock.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright PixelStock Agency All Rights Reserved</p>
             </div>
         </div>
     </div>
@@ -290,6 +319,7 @@
 
     <!-- Main Javascript File -->
     <script src="js/main.js"></script>
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 </body>
 
 </html>

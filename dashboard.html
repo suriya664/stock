@@ -23,154 +23,7 @@
     <link href="css/hover-style.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
-    <style>
-        .dashboard-header {
-            background: linear-gradient(135deg, #0056b3 0%, #003d82 100%);
-            padding: 40px 0;
-            color: #fff;
-        }
 
-        .dashboard-nav {
-            background: #f8f9fa;
-            padding: 20px 0;
-            border-bottom: 2px solid #e0e0e0;
-        }
-
-        .dashboard-nav .nav-link {
-            color: #333;
-            padding: 10px 20px;
-            margin: 0 5px;
-            border-radius: 5px;
-            transition: all 0.3s;
-        }
-
-        .dashboard-nav .nav-link:hover,
-        .dashboard-nav .nav-link.active {
-            background: #0056b3;
-            color: #fff;
-        }
-
-        .stat-card {
-            background: #fff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            margin-bottom: 30px;
-            transition: transform 0.3s;
-        }
-
-        .stat-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
-        }
-
-        .stat-card .stat-icon {
-            font-size: 48px;
-            color: #0056b3;
-            margin-bottom: 15px;
-        }
-
-        .stat-card .stat-number {
-            font-size: 36px;
-            font-weight: bold;
-            color: #333;
-            margin-bottom: 10px;
-        }
-
-        .stat-card .stat-label {
-            color: #666;
-            font-size: 14px;
-        }
-
-        .recent-downloads {
-            background: #fff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .download-item {
-            display: flex;
-            align-items: center;
-            padding: 15px;
-            border-bottom: 1px solid #e0e0e0;
-            transition: background 0.3s;
-        }
-
-        .download-item:hover {
-            background: #f8f9fa;
-        }
-
-        .download-item:last-child {
-            border-bottom: none;
-        }
-
-        .download-item img {
-            width: 80px;
-            height: 80px;
-            object-fit: cover;
-            border-radius: 5px;
-            margin-right: 20px;
-        }
-
-        .download-info {
-            flex: 1;
-        }
-
-        .download-info h5 {
-            margin: 0 0 5px 0;
-            font-size: 16px;
-        }
-
-        .download-info p {
-            margin: 0;
-            color: #666;
-            font-size: 14px;
-        }
-
-        .download-actions a {
-            margin-left: 10px;
-            color: #0056b3;
-            text-decoration: none;
-        }
-
-        .download-actions a:hover {
-            text-decoration: underline;
-        }
-
-        .account-section {
-            background: #fff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            margin-bottom: 30px;
-        }
-
-        .account-section h3 {
-            margin-bottom: 20px;
-            padding-bottom: 15px;
-            border-bottom: 2px solid #0056b3;
-        }
-
-        .progress-bar-custom {
-            height: 25px;
-            border-radius: 5px;
-            background: #e0e0e0;
-            overflow: hidden;
-            margin-bottom: 10px;
-        }
-
-        .progress-fill {
-            height: 100%;
-            background: linear-gradient(90deg, #0056b3 0%, #007bff 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
-            font-weight: bold;
-            transition: width 0.3s;
-        }
-    </style>
 </head>
 
 <body>
@@ -187,8 +40,8 @@
             <li><a href="login.html">Login</a></li>
             <li><a href="dashboard.html">Dashboard</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="javascript:void(0)" id="theme-toggle">Theme: <span id="theme-text">Light</span></a></li>
-            <li><a href="javascript:void(0)" id="rtl-toggle">RTL: <span id="rtl-text">Off</span></a></li>
+            <li><a href="javascript:void(0)" class="theme-toggle">Theme: <span class="theme-text">Light</span></a></li>
+            <li><a href="javascript:void(0)" class="rtl-toggle">RTL: <span class="rtl-text">Off</span></a></li>
         </ul>
     </nav>
     <div class="overlay"></div>
@@ -199,11 +52,13 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-8">
-                    <h1 style="margin: 0; font-size: 36px;">Welcome back, John!</h1>
-                    <p style="margin: 10px 0 0 0; font-size: 16px; opacity: 0.9;">Manage your account and downloads</p>
+                    <h1 style="margin: 0; font-size: 36px; color: #fff;">Welcome back, John!</h1>
+                    <p style="margin: 10px 0 0 0; font-size: 16px; color: #fff; opacity: 0.9;">Manage your account and
+                        downloads</p>
                 </div>
                 <div class="col-md-4 text-right">
-                    <a href="index.html" class="btn" style="background: #fff; color: #0056b3; margin-right: 10px;">
+                    <a href="index.html" class="btn"
+                        style="background: var(--bg-color); color: var(--primary-color); margin-right: 10px;">
                         <i class="fa fa-home"></i> Home
                     </a>
                     <a href="index.html" class="btn"
@@ -222,14 +77,13 @@
                 <a class="nav-link active" href="#overview"><i class="fa fa-dashboard"></i> Overview</a>
                 <a class="nav-link" href="#downloads"><i class="fa fa-download"></i> My Downloads</a>
                 <a class="nav-link" href="#favorites"><i class="fa fa-heart"></i> Favorites</a>
-                <a class="nav-link" href="#collections"><i class="fa fa-folder"></i> Collections</a>
                 <a class="nav-link" href="#account"><i class="fa fa-user"></i> Account Settings</a>
             </nav>
         </div>
     </div>
 
     <!-- Dashboard Content -->
-    <div style="padding: 60px 0; background: #f8f9fa;">
+    <div id="overview" style="padding: 60px 0; background: var(--section-bg);">
         <div class="container">
 
             <!-- Statistics Cards -->
@@ -248,13 +102,7 @@
                         <div class="stat-label">Favorites</div>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="stat-card text-center">
-                        <i class="fa fa-folder stat-icon"></i>
-                        <div class="stat-number">8</div>
-                        <div class="stat-label">Collections</div>
-                    </div>
-                </div>
+
                 <div class="col-md-3 col-sm-6">
                     <div class="stat-card text-center">
                         <i class="fa fa-clock-o stat-icon"></i>
@@ -268,7 +116,7 @@
             <div class="row">
                 <div class="col-md-8">
                     <!-- Recent Downloads -->
-                    <div class="recent-downloads">
+                    <div id="downloads" class="recent-downloads">
                         <h3 style="margin-bottom: 25px;">Recent Downloads</h3>
 
                         <div class="download-item">
@@ -344,11 +192,12 @@
 
                 <div class="col-md-4">
                     <!-- Account Info -->
-                    <div class="account-section">
+                    <div id="account" class="account-section">
                         <h3>Account Plan</h3>
                         <div style="text-align: center; margin-bottom: 20px;">
-                            <div style="font-size: 24px; font-weight: bold; color: #0056b3;">Professional</div>
-                            <p style="color: #666; margin: 5px 0;">$79/month</p>
+                            <div style="font-size: 24px; font-weight: bold; color: var(--primary-color);">Professional
+                            </div>
+                            <p style="color: var(--text-color); margin: 5px 0;">$79/month</p>
                         </div>
 
                         <div style="margin-bottom: 20px;">
@@ -361,7 +210,8 @@
                             </div>
                         </div>
 
-                        <div style="background: #f8f9fa; padding: 15px; border-radius: 5px; margin-bottom: 20px;">
+                        <div
+                            style="background: var(--section-bg); padding: 15px; border-radius: 5px; margin-bottom: 20px;">
                             <p style="margin: 0; font-size: 14px;"><i class="fa fa-calendar"></i> <strong>Renewal
                                     Date:</strong> Feb 15, 2026</p>
                         </div>
@@ -383,20 +233,17 @@
                                 style="width: 100%; text-align: center; background: #f8f9fa; color: #333;">
                                 <i class="fa fa-heart"></i> View Favorites
                             </a>
-                            <a href="#" class="btn btn-block"
-                                style="width: 100%; text-align: center; background: #f8f9fa; color: #333;">
-                                <i class="fa fa-folder"></i> My Collections
-                            </a>
+
                             <a href="contact.html" class="btn btn-block"
                                 style="width: 100%; text-align: center; background: #f8f9fa; color: #333;">
                                 <i class="fa fa-envelope"></i> Contact Support
                             </a>
-                            <a href="javascript:void(0)" id="theme-toggle" class="btn btn-block"
-                                style="width: 100%; text-align: center; background: #f8f9fa; color: #333;">Theme: <span
-                                    id="theme-text">Light</span></a>
-                            <a href="javascript:void(0)" id="rtl-toggle" class="btn btn-block"
-                                style="width: 100%; text-align: center; background: #f8f9fa; color: #333;">RTL: <span
-                                    id="rtl-text">Off</span></a>
+                            <a href="javascript:void(0)" class="theme-toggle btn btn-block"
+                                style="width: 100%; text-align: center; border: 1px solid var(--border-color); background: var(--section-bg); color: var(--text-color);">Theme:
+                                <span class="theme-text">Light</span></a>
+                            <a href="javascript:void(0)" class="rtl-toggle btn btn-block"
+                                style="width: 100%; text-align: center; border: 1px solid var(--border-color); background: var(--section-bg); color: var(--text-color);">RTL:
+                                <span class="rtl-text">Off</span></a>
                         </div>
                     </div>
 
@@ -416,7 +263,7 @@
             </div>
 
             <!-- Favorites Section -->
-            <div class="row" style="margin-top: 30px;">
+            <div id="favorites" class="row" style="margin-top: 30px;">
                 <div class="col-12">
                     <div class="recent-downloads">
                         <h3 style="margin-bottom: 25px;">My Favorites</h3>
@@ -470,7 +317,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="text-center">
+                        <div class="text-center" style="margin-top: 20px;">
                             <a href="#" class="btn">View All Favorites</a>
                         </div>
                     </div>
@@ -483,6 +330,7 @@
 
 
 
+
     <!-- Vendor JavaScript File -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/jquery/jquery-migrate.min.js"></script>
@@ -491,6 +339,7 @@
 
     <!-- Main Javascript File -->
     <script src="js/main.js"></script>
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 </body>
 
 </html>

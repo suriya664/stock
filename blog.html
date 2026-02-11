@@ -40,8 +40,8 @@
             <li><a href="login.html">Login</a></li>
             <li><a href="dashboard.html">Dashboard</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="javascript:void(0)" id="theme-toggle">Theme: <span id="theme-text">Light</span></a></li>
-            <li><a href="javascript:void(0)" id="rtl-toggle">RTL: <span id="rtl-text">Off</span></a></li>
+            <li><a href="javascript:void(0)" class="theme-toggle">Theme: <span class="theme-text">Light</span></a></li>
+            <li><a href="javascript:void(0)" class="rtl-toggle">RTL: <span class="rtl-text">Off</span></a></li>
         </ul>
     </nav>
     <div class="overlay"></div>
@@ -56,7 +56,7 @@
             </div>
 
             <div class="col-md-12">
-                <h1>Home / Blog</h1>
+                <h1>Blog</h1>
             </div>
         </div>
     </div>
@@ -96,7 +96,9 @@
                                             Learn how to use lighting, filters, and composition to take your landscape
                                             shots to the next level.
                                         </p>
-                                        <a class="btn" href="#">Read More</a>
+                                        <div class="text-center-mobile">
+                                            <a class="btn" href="#">Read More</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -125,7 +127,9 @@
                                             on how viewers perceive your images. Discover how to apply the rule of
                                             thirds.
                                         </p>
-                                        <a class="btn" href="#">Read More</a>
+                                        <div class="text-center-mobile">
+                                            <a class="btn" href="#">Read More</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -154,7 +158,9 @@
                                             breaks down everything you need to know about licensing images for your
                                             projects securely.
                                         </p>
-                                        <a class="btn" href="#">Read More</a>
+                                        <div class="text-center-mobile">
+                                            <a class="btn" href="#">Read More</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -183,7 +189,9 @@
                                             who share their secrets on building a profitable portfolio and finding your
                                             niche.
                                         </p>
-                                        <a class="btn" href="#">Read More</a>
+                                        <div class="text-center-mobile">
+                                            <a class="btn" href="#">Read More</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -332,22 +340,48 @@
     <div id="footer">
         <div class="container">
             <div class="row">
-                <div class="col-12">
+                <div class="col-md-3 footer-col">
+                    <h3>About Agency</h3>
+                    <p>
+                        PixelStock is a leading stock photography agency providing high-quality, royalty-free images to
+                        creative professionals worldwide. Our curated collection features millions of stunning
+                        photographs.
+                    </p>
                     <div class="social">
-                        <a href="">
-                            <li class="fa fa-instagram"></li>
-                        </a>
-                        <a href="">
-                            <li class="fa fa-twitter"></li>
-                        </a>
-                        <a href="">
-                            <li class="fa fa-facebook-f"></li>
-                        </a>
+                        <a href=""><i class="fa fa-instagram"></i></a>
+                        <a href=""><i class="fa fa-twitter"></i></a>
+                        <a href=""><i class="fa fa-facebook-f"></i></a>
                     </div>
                 </div>
-                <div class="col-12">
-                    <p>Copyright &#169; <a href="#">PixelStock Agency</a> All Rights Reserved.</p>
+                <div class="col-md-3 footer-col">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><i class="fa fa-angle-right"></i><a href="index.html">Home</a></li>
+                        <li><i class="fa fa-angle-right"></i><a href="portfolio.html">Gallery</a></li>
+                        <li><i class="fa fa-angle-right"></i><a href="booking.html">Pricing</a></li>
+                        <li><i class="fa fa-angle-right"></i><a href="blog.html">Blog</a></li>
+                        <li><i class="fa fa-angle-right"></i><a href="contact.html">Contact</a></li>
+                    </ul>
                 </div>
+                <div class="col-md-3 footer-col">
+                    <h3>Template Features</h3>
+                    <ul>
+                        <li><i class="fa fa-check"></i>Responsive</li>
+                        <li><i class="fa fa-check"></i>Bootstrap 4</li>
+                        <li><i class="fa fa-check"></i>Pure HTML & CSS</li>
+                        <li><i class="fa fa-check"></i>Cross Browser Compatibility</li>
+                        <li><i class="fa fa-check"></i>Ready to Use</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-col footer-contact">
+                    <h3>Contact Info</h3>
+                    <p><i class="fa fa-map-marker"></i>2275 Wolf Pen Road, San Francisco, California</p>
+                    <p><i class="fa fa-phone"></i>+650-376-5625</p>
+                    <p><i class="fa fa-envelope"></i>support@pixelstock.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright PixelStock Agency All Rights Reserved</p>
             </div>
         </div>
     </div>
@@ -362,6 +396,7 @@
 
     <!-- Main Javascript File -->
     <script src="js/main.js"></script>
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 </body>
 
 </html>
