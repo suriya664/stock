@@ -2223,6 +2223,19 @@ h2 {
         padding-left: 15px !important;
         margin-top: 20px !important;
     }
+
+    .sidebar-widget {
+        margin-bottom: 25px !important;
+        padding: 20px !important;
+        background: var(--section-bg) !important;
+        border-radius: 10px !important;
+    }
+
+    .widget-title {
+        margin-bottom: 15px !important;
+        padding-bottom: 10px !important;
+        border-bottom: 2px solid var(--primary-color) !important;
+    }
 }
 
 /* Custom Fix for About Section Equal Heights */
