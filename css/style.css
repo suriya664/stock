@@ -319,6 +319,60 @@ h2 {
     border-radius: 6px;
 }
 
+.fixed-logo {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 1020; /* High enough to be above fixed dashboard header */
+}
+
+.fixed-logo .brand {
+    font-size: 30px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    text-decoration: none;
+    line-height: 50px;
+    padding: 0 15px;
+    background: rgba(0, 0, 0, .3);
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.fixed-logo .brand:hover {
+    color: var(--primary-color);
+}
+
+/* Dashboard Specific: Centered Logo, Integrated with Fixed Header */
+.fixed-logo.center-logo {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.fixed-logo.center-logo .brand {
+    background: transparent; /* Integrated into fixed header */
+    color: #ffffff;         /* White text for contrast on blue header */
+    box-shadow: none;       /* Remove shadow when fixed */
+    padding: 0 15px;
+    line-height: 50px;
+    border-radius: 6px;
+}
+
+.fixed-logo.center-logo .brand:hover {
+    color: #f8f9fa;
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .fixed-logo.center-logo {
+        top: 0.5%;
+    }
+    .fixed-logo.center-logo .brand {
+        font-size: 24px;
+    }
+}
+
 .menu span {
     position: relative;
     margin-top: 9px;
@@ -645,6 +699,21 @@ h2 {
     left: calc(50% - 7px);
     background: var(--heading-color);
     border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .fixed-logo .brand {
+        font-size: 24px;
+        padding: 0 10px;
+    }
+
+    .fixed-logo.center-logo {
+        top: 10px;
+    }
+    
+    .fixed-logo.center-logo .brand {
+        line-height: 40px;
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -1770,14 +1839,24 @@ h2 {
 /* Dashboard Styles */
 .dashboard-header {
     background: linear-gradient(135deg, #0056b3 0%, #003d82 100%);
-    padding: 40px 0;
+    padding: 30px 0;
     color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1010; /* Above fixed-logo z-index 1000 to contain it, or logo above it */
 }
 
 .dashboard-nav {
     background: var(--section-bg);
-    padding: 20px 0;
+    padding: 15px 0;
     border-bottom: 2px solid var(--border-color);
+    position: fixed;
+    top: 100px; /* Increased gap from 90px */
+    left: 0;
+    right: 0;
+    z-index: 1009;
 }
 
 .dashboard-nav .nav-link {
@@ -1792,6 +1871,10 @@ h2 {
 .dashboard-nav .nav-link.active {
     background: #0056b3;
     color: #fff;
+}
+
+#overview {
+    padding-top: 190px !important; /* Increased gap from 170px for more breathing room */
 }
 
 .stat-card {
@@ -1825,6 +1908,12 @@ h2 {
 .stat-card .stat-label {
     color: var(--text-color);
     font-size: 14px;
+}
+
+.recent-downloads,
+#favorites,
+#account {
+    margin-top: 50px; /* Added significant space between major dashboard sections */
 }
 
 .recent-downloads {
